@@ -1,0 +1,31 @@
+{
+
+  "description": "Adds a browser action icon to the toolbar.  The active tab's body content is then replaced with a picture of the chosen beast. ",
+  "manifest_version": 2,
+  "name": "8ball",
+  "version": "1.0",
+  "content_security_policy": "default-src 'self'; font-src 'self'",
+  "icons": {
+    "48": "PostIt.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "PostIt.png",
+    "theme_icons": [{
+        "light": "PostIt.png",
+        "dark": "PostIt.png",
+        "size": 32
+    }],
+    "default_title": "8ball",
+    "default_popup": "index.html"
+  },
+
+  "web_accessible_resources": [
+    "PostIt/PostIt.png"
+  ]
+
+}

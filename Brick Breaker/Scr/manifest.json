@@ -1,0 +1,30 @@
+{
+
+  "description": "Adds a browser action icon to the toolbar.  The active tab's body content is then replaced with a picture of the chosen beast. ",
+  "manifest_version": 2,
+  "name": "Brick Breaker",
+  "version": "1.0",
+  "icons": {
+    "48": "game.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "game.png",
+    "theme_icons": [{
+        "light": "game.png",
+        "dark": "game.png",
+        "size": 32
+    }],
+    "default_title": "Brick Breaker",
+    "default_popup": "index.html"
+  },
+
+  "web_accessible_resources": [
+    "Brick Breaker/game.png"
+  ]
+
+}
